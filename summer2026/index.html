@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Фотоальбом</title>
+</head>
+<body>
+  <div id="wrapper" class="container py-4">
+    <div id="photoCarousel" class="carousel" data-bs-autoplay="true" data-bs-interval="3000">
+      
+      <div class="carousel-inner rounded-9">
+        <div class="carousel-item active">
+            
+          <img src="img/1.png" class="d-block w-100" alt="Фото 1" >
+          <p id="moscow">Москва, ноябрь</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.png" class="d-block w-100" alt="Фото 2">
+          <p id="moscow">Москва, ноябрь</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.png" class="d-block w-100" alt="Фото 3">
+          <p id="dacha">Дача, ноябрь</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/4.png" class="d-block w-100" alt="Фото 4">
+          <p id="dacha">Дача, октябрь</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/5.png" class="d-block w-100" alt="Фото 5">
+          <p id="dacha">Дача, октябрь</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/6.png" class="d-block w-100" alt="Фото 6">
+          <p id="dacha">Дача, октябрь</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/7.png" class="d-block w-100" alt="Фото 7">
+          <p id="dacha">Дача, октябрь</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/8.png" class="d-block w-100" alt="Фото 8">
+          <p id="dacha">Дача, август</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/9.png" class="d-block w-100" alt="Фото 9">
+          <p id="dacha">Дача, июль</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/10.png" class="d-block w-100" alt="Фото 10">
+           <p id="dacha">Дача, август</p>
+          
+        </div>
+        <div class="carousel-item">
+          <img src="img/11.png" class="d-block w-100" alt="Фото 11">
+           <p id="dacha">Дача, август</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/12.png" class="d-block w-100" alt="Фото 12">
+           <p id="dacha">Дача, август</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/13.png" class="d-block w-100" alt="Фото 13">
+           <p id="dacha">Дача, август</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/14.png" class="d-block w-100" alt="Фото 14">
+           <p id="dacha">Дача, июль</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/15.png" class="d-block w-100" alt="Фото 15">
+          <p id="dacha">Дача, июль</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/16.png" class="d-block w-100" alt="Фото 16">
+          <p id="dacha">Дача, июль</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/17.png" class="d-block w-100" alt="Фото 17">
+          <p id="dacha">Дача, июль</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/18.png" class="d-block w-100" alt="Фото 18">
+          <p id="dacha">Дача, июль</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/19.png" class="d-block w-100" alt="Фото 19">
+          <p id="dacha">Дача, июль</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/20.png" class="d-block w-100" alt="Фото 20">
+          <p id="moscow">Коровинское шоссе, 3к1</p>
+        </div>
+      </div>
+
+      <!-- Панель управления: стрелки, индикаторы, пауза -->
+      <div class="d-flex justify-content-between align-items-center gap-3 mt-3">
+        <div class="d-flex gap-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev" aria-label="Предыдущий слайд">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#photoCarousel" data-bs-slide="next" aria-label="Следующий слайд">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="carousel-indicators flex-wrap">
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="3" aria-label="Слайд 4"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="4" aria-label="Слайд 5"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="5" aria-label="Слайд 6"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="6" aria-label="Слайд 7"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="7" aria-label="Слайд 8"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="8" aria-label="Слайд 9"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="9" aria-label="Слайд 10"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="10" aria-label="Слайд 11"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="11" aria-label="Слайд 12"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="12" aria-label="Слайд 13"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="13" aria-label="Слайд 14"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="14" aria-label="Слайд 15"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="15" aria-label="Слайд 16"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="16" aria-label="Слайд 17"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="17" aria-label="Слайд 18"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="18" aria-label="Слайд 19"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="19" aria-label="Слайд 20"></button>
+        </div>
+
+        <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#photoCarousel" aria-label="Пауза" data-bs-pause-label="Пауза" data-bs-play-label="Воспроизвести">
+          <span class="carousel-icon-pause" aria-hidden="true"></span>
+          <span class="carousel-icon-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+</html>
